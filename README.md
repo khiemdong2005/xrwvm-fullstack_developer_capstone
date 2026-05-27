@@ -1,4 +1,3 @@
-Set-Content -Encoding UTF8 README.md @'
 # fullstack_developer_capstone
 
 Repository name: xrwvm-fullstack_developer_capstone
@@ -25,4 +24,3 @@ The application allows users to:
 - HTML
 - CSS
 - GitHub Actions
-'@
