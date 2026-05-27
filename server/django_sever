@@ -1,0 +1,16 @@
+Command:
+python manage.py runserver
+
+Output:
+Watching for file changes with StatReloader
+Performing system checks...
+
+You have 18 unapplied migration(s). Your project may not work properly until you apply the migrations for app(s): admin, auth, contenttypes, sessions.
+Run 'python manage.py migrate' to apply them.
+
+May 27, 2026 - 08:09:05
+Django version 5.2.14, using settings 'server.settings'
+Starting development server at http://127.0.0.1:8000/
+Quit the server with CTRL-BREAK.
+
+WARNING: This is a development server. Do not use it in a production setting. Use a production WSGI or ASGI server instead.
