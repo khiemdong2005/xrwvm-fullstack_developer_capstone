@@ -1,6 +1,11 @@
-# Django React Dealership Application
+@"
+# fullstack_developer_capstone
 
-This project is a Django and React based car dealership web application.
+Repository name: xrwvm-fullstack_developer_capstone
+
+Project name: fullstack_developer_capstone
+
+This project is a Django and React based full stack developer capstone project.
 
 ## Project Details
 
@@ -20,3 +25,4 @@ The application allows users to:
 - HTML
 - CSS
 - GitHub Actions
+"@ | Set-Content -Encoding UTF8 README.md
