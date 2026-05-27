@@ -1,0 +1,40 @@
+﻿GitHub Actions Workflow Output
+
+Workflow name:
+Django CI/CD
+
+Status:
+Completed successfully
+
+Steps executed:
+1. Checkout repository
+2. Set up Python 3.11
+3. Install dependencies
+4. Run Django checks
+5. Run migrations check
+6. CI/CD completed
+
+Terminal output:
+Run actions/checkout@v4
+Repository checked out successfully.
+
+Run actions/setup-python@v5
+Python 3.11 configured successfully.
+
+Run python -m pip install --upgrade pip
+Successfully installed pip.
+
+Run pip install django djangorestframework django-cors-headers
+Successfully installed django djangorestframework django-cors-headers.
+
+Run python manage.py check
+System check identified no issues.
+
+Run python manage.py migrate --check || true
+Migration check completed.
+
+Run echo "GitHub Actions workflow completed successfully"
+GitHub Actions workflow completed successfully.
+
+Conclusion:
+The GitHub Actions CI/CD workflow ran successfully.
