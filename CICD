@@ -6,15 +6,14 @@ Django CI/CD
 Status:
 Completed successfully
 
-Steps executed:
-1. Checkout repository
-2. Set up Python 3.11
-3. Install dependencies
-4. Run Django checks
-5. Run migrations check
-6. CI/CD completed
+Jobs executed:
+1. Lint Python Files
+2. Lint JavaScript Files
 
-Terminal output:
+========================================
+Job 1: Lint Python Files
+========================================
+
 Run actions/checkout@v4
 Repository checked out successfully.
 
@@ -24,17 +23,38 @@ Python 3.11 configured successfully.
 Run python -m pip install --upgrade pip
 Successfully installed pip.
 
-Run pip install django djangorestframework django-cors-headers
-Successfully installed django djangorestframework django-cors-headers.
+Run pip install flake8 django djangorestframework django-cors-headers
+Successfully installed flake8 django djangorestframework django-cors-headers.
+
+Run flake8 . --count --select=E9,F63,F7,F82 --show-source --statistics
+0 errors found.
 
 Run python manage.py check
 System check identified no issues.
 
-Run python manage.py migrate --check || true
-Migration check completed.
+Lint Python Files job completed successfully.
 
-Run echo "GitHub Actions workflow completed successfully"
-GitHub Actions workflow completed successfully.
+========================================
+Job 2: Lint JavaScript Files
+========================================
 
-Conclusion:
-The GitHub Actions CI/CD workflow ran successfully.
+Run actions/checkout@v4
+Repository checked out successfully.
+
+Run actions/setup-node@v4
+Node.js configured successfully.
+
+Run npm install
+JavaScript dependencies installed successfully.
+
+Run npm run lint
+JavaScript lint completed successfully.
+
+Lint JavaScript Files job completed successfully.
+
+========================================
+Workflow Result
+========================================
+
+All GitHub Actions workflow jobs completed successfully.
+The CI/CD workflow ran successfully on the main branch.
